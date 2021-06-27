@@ -22,6 +22,8 @@ function App() {
       setCoords({"latitude": latitude, "longitude": longitude})
       setMap(new google.maps.Map(
         document.getElementById('map'), {center: new google.maps.LatLng(latitude, longitude), zoom: 15}))
+    }).catch(error => {
+      console.log("no permission to fetch geo location");
     });
   }, []);
   

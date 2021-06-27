@@ -35,8 +35,6 @@ const RightBar = props => {
           <div className="MainContainer">
             <div id="map"></div>
                 <PlacesList items={items} />
-            
-
           </div>
         </div>
     );
