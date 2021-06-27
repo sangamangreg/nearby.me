@@ -10,7 +10,13 @@ const PlacesList = props => {
 
     return (
         <div className="PlacesLists">
-            {renderPlacesList}
+            {
+                props.items.length > 0 ? renderPlacesList : (
+                    <div>
+                       No results found.
+                    </div>
+                )
+            }
         </div>
     );
 }

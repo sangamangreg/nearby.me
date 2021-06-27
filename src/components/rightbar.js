@@ -22,7 +22,9 @@ const RightBar = props => {
                 if (status === props.google.maps.places.PlacesServiceStatus.OK) {
                     setItems(results);
                 } else {
-                    console.log(status);
+                    if (status === "ZERO_RESULTS") {
+                        setItems([]);
+                    }
                 }
             });
         } else {
