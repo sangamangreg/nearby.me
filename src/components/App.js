@@ -1,4 +1,3 @@
-/* global google */
 import Header from './header'
 import Sidebar from './sidebar'
 import RightBar from './rightbar'
@@ -10,6 +9,7 @@ function App() {
   const [coords, setCoords] = useState({"latitude": null, "longitude": null});
   const [map, setMap] = useState(null);
   const [type, setType] = useState('atm');
+  const google = window.google;
 
   const updateType = types => {
     setType(types[0]);  

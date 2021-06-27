@@ -15,7 +15,7 @@ const Place = props => {
             </div>
             <div className="PlaceBox_Footer">
                 <div className="PlaceBox_FooterText">
-                {place.opening_hours ? place.opening_hours.open_now ? 'Open right now' : 'Closed' : ''}
+                {place.opening_hours ? place.opening_hours.open_now ? 'Open right now' : 'Closed' : 'Not Sure'}
                 </div>
             </div>
         </div>
